@@ -14,11 +14,10 @@ func printWelcome() {
 	fmt.Println("There are 8 planets to explore.")
 }
 
-func getResponseToPrompt(prompt string) string {
-	var response string
+func getResponseToPrompt(prompt string) (response string) {
 	fmt.Println(prompt)
     fmt.Scan(&response)
-    return response
+    return 
 }
 
 func printGreeting(name string) {
