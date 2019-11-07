@@ -3,15 +3,15 @@ package spaceadventure
 import "fmt"
 
 // Start runs the space adventure
-func Start() {
-	printWelcome()
+func Start(planetarySystem PlanetarySystem) {
+	printWelcome(planetarySystem)
 	printGreeting(responseToPrompt("What is your name?"))
 	fmt.Println("Let's go on an adventure!")
 	travel(promptForRandomOrSpecificDestination("Shall I randomly choose a planet for you to visit? (Y or N)"))
 }
 
-func printWelcome() {
-	fmt.Println("Welcome to the Solar System!")
+func printWelcome(planetarySystem PlanetarySystem) {
+	fmt.Printf("Welcome to the %s!", planetarySystem.Name)
 	fmt.Println("There are 8 planets to explore.")
 }
 
