@@ -46,5 +46,5 @@ func travelToRandomPlanet() {
 
 func travelToPlanet(planetName string) {
 	fmt.Printf("Traveling to %s...\n", planetName)
-	fmt.Println("Arrived at Neptune. A very cold planet, furthest from the sun.")
+	fmt.Printf("Arrived at %s. A very cold planet, furthest from the sun.", planetName)
 }
